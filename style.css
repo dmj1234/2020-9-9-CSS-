@@ -1,0 +1,285 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+/*初始化框架*/
+li {
+  list-style: none;
+}
+/*li 列表去除原点*/
+a {
+  text-decoration: none;
+}
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  *zoom: 1;
+}
+/*清除浮动*/
+/*a标签默认都有下划线，去除*/
+button {
+  border: none;
+}
+body {
+  background-color: #f4f5f9;
+}
+.w {
+  width: 1200px;
+  margin: auto;
+}
+/*版心*/
+.header {
+  height: 42px;
+  margin: 30px auto;
+}
+.logo {
+  float: left;
+  margin-right: 60px;
+}
+.nav ul li {
+  float: left;
+}
+.nav ul li a {
+  display: block;
+  padding: 0 10px;
+  margin-right: 20px;
+  line-height: 40px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #020305;
+}
+.nav ul li a:hover {
+  border-bottom: 2px solid #00a4ff;
+}
+.search {
+  float: left;
+  margin-left: 70px;
+}
+.search input {
+  float: left;
+  padding-left: 20px;
+  width: 340px;
+  height: 40px;
+  border: 1px solid #00a4ff;
+  border-right: 0px;
+  color: #ccc;
+}
+.search button {
+  width: 50px;
+  height: 42px;
+  background: url(images/btn.png);
+}
+.user {
+  float: left;
+  margin-left: 30px;
+  font: size 14px;
+  color: #666666;
+  height: 42px;
+  line-height: 42px;
+}
+/*.banner开始*/
+.banner {
+  height: 420px;
+  background: #1c036c url(images/banner2.png) no-repeat top center;
+}
+.subnav {
+  float: left;
+  padding: 0 20px;
+  width: 150px;
+  height: 420px;
+  background: rgb(0, 0, 0, 0.3);
+}
+.subnav ul li a span {
+  float: right;
+}
+.subnav li {
+  height: 45px;
+  line-height: 45px;
+}
+.subnav ul li a {
+  font-size: 14px;
+  text-decoration: none;
+  color: #f4f5f9;
+}
+.subnav ul li a:hover {
+  color: #00b4ff;
+}
+.course {
+  float: right;
+  margin-top: 50px;
+  width: 228px;
+  height: 300px;
+  background-color: pink;
+}
+.course-hd {
+  height: 48px;
+  background-color: #9bceea;
+  font-size: 18px;
+  text-align: center;
+  line-height: 48px;
+  color: #fff;
+  font-weight: bold;
+}
+.course-bd {
+  padding: 0 15px;
+}
+.course-bd li {
+  height: 50px;
+  border-bottom: 1px solid #ccc;
+  margin-top: 10 px;
+}
+.course-bd li h4 {
+  font-size: 14px;
+  color: #4e4e44;
+}
+.course-bd li p {
+  font-size: 12px;
+  color: #a5a5a5;
+}
+.course-bd ul {
+  padding-top: 10px;
+}
+.all {
+  display: block;
+  margin-top: 10px;
+  height: 38px;
+  border: 1px solid #00a4ff;
+  font-size: 16px;
+  line-height: 38px;
+  text-align: center;
+  color: #00a4ff;
+}
+.all:hover {
+  background-color: #00a4ff;
+}
+.goods {
+  margin-top: 10px;
+  height: 60px;
+  line-height: 60px;
+  box-shadow: 2px 2px 2px rgb(0, 0, 0, 0.3);
+}
+.goods h3 {
+  float: left;
+  margin: 0 30px;
+  font-size: 16px;
+  color: #00b4ff;
+}
+.goods-item {
+  float: left;
+  color: #bfbfbf;
+}
+.goods-item a {
+  font-size: 16px;
+  color: #050505;
+  margin: 0 30px;
+}
+.mob {
+  float: right;
+  font-size: 14px;
+  color: #00a4ff;
+  margin-right: 30px;
+}
+.box {
+  margin-top: 15px;
+}
+.box-hd {
+  height: 60px;
+  line-height: 60px;
+}
+.box-hd h3 {
+  float: left;
+  font-size: 20px;
+  color: #494949;
+  font-weight: 400;
+}
+/*让粗体不加粗*/
+.box-hd a {
+  margin-right: 30px;
+  float: right;
+  font-size: 12px;
+  color: #00b4ff;
+}
+.box-bd {
+  width: 1215px;
+}
+/*这个盒子一定不要给高度，因为我们可能放一行 也可能是2行或者n行 */
+/*.box-bd宽度超过了版心1200 是可以的*/
+.box-bd li {
+  position: relative;
+  float: left;
+  width: 228px;
+  height: 270px;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  box-shadow: 2px 2px 2px rgb(0, 0, 0, 0.3);
+}
+.box-bd li img {
+  width: 100%;
+}
+.box-bd .hot {
+  position: absolute;
+  top: 0;
+  right: -4px;
+  width: 40px;
+}
+.box-bd li h4 {
+  margin: 20px 20px;
+  font-size: 14px;
+  color: #050505;
+  font-weight: 400;
+}
+.box-bd li p {
+  margin: 0 20px;
+  font-size: 12px;
+  color: #00b4ff;
+}
+.box-bd li p span {
+  color: red;
+}
+.footer {
+  padding-top: 30px;
+  height: 200px;
+  background-color: #e2e2e2;
+}
+.copyright {
+  float: left;
+}
+.copyright p {
+  margin: 20px 0px 15px 0px;
+  font-size: 12px;
+  color: #666;
+}
+.app {
+  display: block;
+  border: 1px solid #00a4ff;
+  width: 118px;
+  height: 34px;
+  text-align: center;
+  line-height: 34px;
+  font-size: 16px;
+  color: #00a4ff;
+}
+.links {
+  float: right;
+}
+.links dl h6 {
+  height: 25px;
+}
+.links dt {
+  color: #333;
+  font-size: 16px;
+}
+.links dd a {
+  font-size: 12px;
+  color: #333333;
+}
+.links dl {
+  float: left;
+  margin-left: 100px;
+}
